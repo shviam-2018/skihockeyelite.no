@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.sponsors {
+    margin-top: 1rem;
+}
+
+.sponsor-banner img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #003366;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0066cc;
+}
+
+/* Main Content Sections */
+main section {
+    padding: 2rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+.player-profile, .board-member {
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
