@@ -3,137 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Club</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ski Ishockey Elite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="assets/club-logo.png" alt="Klubb Logo">
+            <a href="nightdev4l.me/skihockeyelite.no/index.html"><img src="images/club-logo.png" alt="Ski Ishockey Elite Logo"></a>
         </div>
-        <div class="sponsors">
-            <!-- Sponsor Banner beneath Logo -->
-            <div class="sponsor-banner">
-                <img src="assets/sponsor1.png" alt="Sponsor 1">
-                <img src="assets/sponsor2.png" alt="Sponsor 2">
-                <img src="assets/sponsor3.png" alt="Sponsor 3">
-            </div>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Kampoppsett</a></li>
+                <li><a href="#">sponsorer</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Medlem</a></li>
+            </ul>
+             <!-- Hamburger Menu -->
+             <div id="hamburger-menu" class="hamburger">&#9776;</div>
+        </nav>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="#home">Hjem</a></li>
-            <li><a href="#players">Spillere</a></li>
-            <li><a href="#board">Styret</a></li>
-            <li><a href="#news">Nyheter</a></li>
-            <li><a href="#matches">Kamper</a></li>
-            <li><a href="#results">Resultater og Tabell</a></li>
-            <li><a href="#history">Historie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
     <main>
-        <!-- Home Section -->
-        <section id="home">
-            <h1>Velkommen til Vår Hockeyklubb</h1>
-            <p>Her kan du følge med på våre kamper, spillere og nyheter!</p>
-            <div class="latest-results">
-                <h2>Siste Kamper</h2>
-                <p>Resultat: Klubb X 4 - 3 Klubb Y</p>
+        <!-- Homepage Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Velkommen til Ski Ishockey Elite</h1>
+                <p>hvor talent møter is</p>
+                <a href="#" class="cta-button">Join the Team</a>
             </div>
-            <div class="upcoming-matches">
-                <h2>Kommende Kamper</h2>
-                <p>Dato: 10/11/2024, Motstander: Klubb Z</p>
+            <div class="hero-images">
+                <img src="images/playerAction.png" alt="Hockey Player 1" class="hero-image">
+                <img src="images/playerAction2.png" alt="Hockey Player 2" class="hero-image">
+                <img src="images/playerAction3.png" alt="Hockey Player 3" class="hero-image">
             </div>
         </section>
-
-        <!-- Players Section -->
-        <section id="players">
-            <h2>Spillere</h2>
-            <div class="player-profile">
-                <img src="assets/player1.jpg" alt="Spiller 1">
-                <p>Navn: Spiller 1<br>Posisjon: Forsvarer<br>Nummer: #12</p>
-            </div>
-            <!-- Add more player profiles as needed -->
-        </section>
-
-        <!-- Board Section -->
-        <section id="board">
-            <h2>Styret</h2>
-            <div class="board-member">
-                <img src="assets/board1.jpg" alt="Board Member 1">
-                <p>Navn: Styremedlem 1<br>Rolle: Leder<br>E-post: styremedlem1@hockeyklubb.no</p>
-            </div>
-            <!-- Add more board profiles as needed -->
-        </section>
-
-        <!-- News Section -->
-        <section id="news">
-            <h2>Nyheter</h2>
-            <div class="facebook-posts">
-                <!-- Facebook plugin for live updates -->
-                <div id="fb-root"></div>
-                <div class="fb-page" data-href="https://www.facebook.com/YourClubPage" 
-                     data-tabs="timeline" data-width="" data-height="500" data-small-header="false" 
-                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <blockquote cite="https://www.facebook.com/YourClubPage" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/YourClubPage">Facebook Page</a>
-                    </blockquote>
+        
+        <!--Norsktipping-->
+        <section id="text-slider">
+            <div class="slider-container">
+                <div class="slider-content">
+                    <p>Velkommen til Ski Ishockey Elite!</p>
+                    <p>Hvor lidenskap møter isen!</p>
+                    <p>Bli med teamet vårt og skap historie!</p>
+                    <p>Opplev spenningen i spillet!</p>
+                    <p>Norsk Tipping Grasrotandelen Ski Ishockey Elite 825244352</p>
                 </div>
             </div>
         </section>
 
-        <!-- Matches Section -->
-        <section id="matches">
-            <h2>Kamper</h2>
-            <p>Dato: 15/11/2024, Motstander: Klubb A</p>
+
+        <!-- News Section with 2 rows of 3 articles each -->
+        <section id="news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-articles">
+                    <!-- Article 1 -->
+                    <div class="news-item">
+                        <a href="article1.html">
+                            <img src="images/art1.png" alt="Article 1">
+                            <h3>Pictures from Ski vs Hasle 09.10.24</h3>
+                            <p>Better late than never but a win is always a good thing</p>
+                        </a>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="news-item">
+                        <a href="article2.html">
+                            <img src="https://via.placeholder.com/300x200?text=Article+2" alt="Article 2">
+                            <h3>Pictures from game 18.11.23 vs Gruner</h3>
+                            <p>Better late than never but a win is always a good thing</p>
+                        </a>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="news-item">
+                        <a href="article3.html">
+                            <img src="images/art3.png" alt="Article 3">
+                            <h3>Pictures from game 18.11.23 vs Gruner</h3>
+                            <p>WBilder fra dagens kamp. Gutta går på en liten smell i dag 1-8 mot topplaget Gruner.</p>
+                        </a>
+                    </div>
+                    <!-- Article 4 -->
+                    <div class="news-item">
+                        <a href="article4.html">
+                            <img src="images/art4.png" alt="Article 4">
+                            <h3>Pictures from Ski Elite vs. Furuset 01.11.23</h3>
+                            <p>Despite the result of a loss Ski Elite 3 vs. Furuset 4 this was a great game that saw quick transitions and a Ski team that worked end to end through 3 periods.</p>
+                        </a>
+                    </div>
+                    <!-- Article 5 -->
+                    <div class="news-item">
+                        <a href="article5.html">
+                            <img src="images/art5.png" alt="Article 5">
+                            <h3>Pictures from Ski Vs. Narvik 22.10.23</h3>
+                            <p>Today's pictures from a 5 - 2 loss to Narvik. Despite a promising start…</p>
+                        </a>
+                    </div>
+                    <!-- Article 6 -->
+                    <div class="news-item">
+                        <a href="article6.html">
+                            <img src="images/art6.png" alt="Article 6">
+                            <h3>Pictures from Ski Vs. Narvik 21.10.23</h3>
+                            <p>Today the boys played one of their best games of the season but 3rd period mistakes cost them in the end….</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Results and Table Section -->
-        <section id="results">
-            <h2>Resultater og Tabell</h2>
-            <p>Resultater...</p>
-            <p>Tabell...</p>
+        <!-- Teams Section -->
+        <section id="teams">
+            <div class="container">
+                <h2>Our Teams</h2>
+                <div class="team">
+                    <h3>Junior Team</h3>
+                    <img src="https://via.placeholder.com/300x200?text=Junior+Team" alt="Junior Team">
+                </div>
+                <div class="team">
+                    <h3>Senior Team</h3>
+                    <img src="https://via.placeholder.com/300x200?text=Senior+Team" alt="Senior Team">
+                </div>
+                <div class="team">
+                    <h3>Women's Team</h3>
+                    <img src="https://via.placeholder.com/300x200?text=Women+Team" alt="Women Team">
+                </div>
+            </div>
         </section>
 
-        <!-- History Section -->
-        <section id="history">
-            <h2>Historie</h2>
-            <p>Klubben ble grunnlagt i...</p>
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+Image+1" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+Image+2" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x200?text=Gallery+Image+3" alt="Gallery Image 3">
+                </div>
+            </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Us Section -->
         <section id="contact">
-            <h2>Kontakt</h2>
-            <form action="#">
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Melding:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions? Get in touch with us!</p>
+                <form action="mailto:post@skihockeyelite.no" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Hockeyklubb | Alle Rettigheter Reservert</p>
-        <p><a href="#contact">Kontakt oss</a></p>
+        <div class="footer-content">
+            <p>© 2024 Ski Ishockey Elite | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
-    <!-- Facebook SDK for JavaScript -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v12.0"></script>
 </body>
 </html>
