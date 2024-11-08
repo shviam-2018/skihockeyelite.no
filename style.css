@@ -1,0 +1,304 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: auto; /* Align the nav items to the right */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav li {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007BFF;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section Styles */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 600px; 
+    background-color: #f4f4f4;
+    overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.hero-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Text Slider Section */
+#text-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #28a745;
+}
+
+.slider-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollText 15s linear infinite;
+}
+
+.slider-content p {
+    padding-right: 50px;
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#text-slider:hover .slider-content {
+    animation-play-state: paused;
+}
+
+/* News Section Styles */
+#news {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#news h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.news-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.news-item h3 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+.news-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Teams Section */
+#teams, #news, #gallery, #contact {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team, .news-item, .gallery-item {
+    margin-bottom: 20px;
+}
+
+.team img, .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Mobile styles for the hamburger menu */
+@media screen and (max-width: 768px) {
+    #hamburger-menu {
+        display: block; /* Show hamburger menu only on mobile */
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10;  /* Ensure the hamburger icon is above other content */
+    }
+
+    nav ul {
+        display: none; /* Hide the navigation list by default */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute; /* Position the menu relative to the viewport */
+        top: 70px; /* Position below the header */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        z-index: 1000; /* Ensure the menu is on top of other content */
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Show the menu when 'open' class is added */
+    nav.open ul {
+        display: flex;
+    }
+}
+
+/* Hide the hamburger menu on larger screens */
+@media screen and (min-width: 769px) {
+    #hamburger-menu {
+        display: none;
+    }
+}
+
